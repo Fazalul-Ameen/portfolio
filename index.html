@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fazal's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        #cursor {
+  display: inline-block;
+  font-weight: bold;
+  color: #fff;
+  animation: blink 0.8s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+    </style>
+</head>
+<body class="bg-dark text-light">
+
+    <!-- Navbar -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img id="navProfileImg" src="./aboutImg/profile.jpg" alt="Profile" class="rounded-circle me-2 nav-img" style="width:40px; height:40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="vh-100 d-flex align-items-center justify-content-center position-relative overflow-hidden">
+        <div class="container text-center position-relative z-2">
+            <div class="hero-img-wrapper mx-auto mb-4 position-relative">
+                <img id="heroProfileImg" src="./aboutImg/profile.jpg" alt="Profile" class="rounded-circle shadow-lg hero-img object-fit" style="width:160px; height:160px;">
+            </div>
+            <h1 class="display-4 fw-bold mb-2 animate__animated animate__fadeInDown">
+  <span id="typing-text"></span><span id="cursor">|</span>
+</h1>
+            <p class="lead mb-4 animate__animated animate__fadeInUp">B-TECH COMPUTER SCIENCE AND ENGINEERING Student<br>at COLLEGE OF ENGINEERING, ATTINGAL, TRIVANDRUM</p>
+            <a href="#about" class="btn btn-outline-light btn-lg animate__animated animate__fadeInUp">Explore My Work <i class="fa fa-arrow-down ms-2"></i></a>
+        </div>
+        <div class="hero-bg-glow"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h2 class="fw-bold mb-3">About Me</h2>
+                    <p>
+                        I'm a passionate B-Tech student specializing in Computer Science & Engineering. I like building creative web experiences, exploring new technologies, and solving challenging problems. My portfolio showcases my journey, skills, and achievements.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="about-glow"></div>
+                    <img src="./aboutImg/2279868.jpg" alt="About" class="img-fluid rounded-4 shadow-lg about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-5 bg-gradient-dark">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">Certificates</h2>
+            <div id="certCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner rounded-4 shadow-lg">
+                    <div class="carousel-item active">
+                        <img src="./Activity_certificates/Enigma.png" class="d-block w-100 cert-img" alt="Certificate 1" style="object-fit: contain; height: 400px; background: #222;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>ENIGMA'23</h5>
+                            <p>Issued by Alchemy IEDC CEAL</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Activity_certificates/Flutter.png" class="d-block w-100 cert-img" alt="Certificate 2" style="object-fit: contain; height: 400px; background: #222;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Flutter Development</h5>
+                            <p>Issued by Zoople Technologies Pvt Ltd.</p>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Activity_certificates/tech1.png" class="d-block w-100 cert-img" alt="Certificate 2" style="object-fit: contain; height: 400px; background: #222;">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Cyber Security and Ethical Hacking</h5>
+                        <p>Issued by Techmaghi & IIT Delhi, Tryst'24</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./Activity_certificates/NASA.png" class="d-block w-100 cert-img" alt="Certificate 2" style="object-fit: contain; height: 400px; background: #222;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Nasa Space Apps Challenge</h5>
+                            <p>Issued by NASA</p>
+                        </div>
+                    </div>
+
+                     <div class="carousel-item">
+                        <img src="./Activity_certificates/tech2.png" class="d-block w-100 cert-img" alt="Certificate 2" style="object-fit: contain; height: 400px; background: #222;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Data Science with Python</h5>
+                            <p>Issued by Techmaghi & IIT Hyderabad, ELAN & nVISION'24</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#certCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#certCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">Skills</h2>
+            <div id="skillsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner rounded-4 shadow-lg">
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 text-center">
+                                <img src="./Skills/mern.webp" class="img-fluid skill-img" alt="Skill 1">
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Web Development(MERN-stack)</h4>
+                                <p>HTML, CSS, JavaScript, React, Bootstrap, Node.js, Express.js</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 text-center">
+                                <img src="./Skills/prog_lang.png" class="img-fluid skill-img" alt="Programming languages icons including C, C++, Java, and Python arranged together on a clean background, conveying a sense of technical expertise and focus">
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Programming Languages</h4>
+                                <p>C, C++, Java, Python</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 text-center">
+                                <img src="./Skills/flutter.png" class="img-fluid skill-img" alt="Flutter logo">
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Mobile Development</h4>
+                                <p>Flutter, Dart</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#skillsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#skillsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-gradient-dark">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control bg-dark text-light" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control bg-dark text-light" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control bg-dark text-light" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-light w-100">Send <i class="fa fa-paper-plane ms-2"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center bg-dark text-secondary">
+        <div class="container">
+            &copy; 2024 Fazal. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script>
+  const text = "Hi, I'm Fazalul Ameen";
+  const typingText = document.getElementById('typing-text');
+  let idx = 0;
+
+  function type() {
+    if (idx < text.length) {
+      typingText.textContent += text.charAt(idx);
+      idx++;
+      setTimeout(type, 80);
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', type);
+</script>
+</body>
+</html>

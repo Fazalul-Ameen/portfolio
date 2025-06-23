@@ -1,0 +1,203 @@
+/* General Styles */
+body {
+    background: #181a1b;
+    color: #f8f9fa;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    backdrop-filter: blur(8px) saturate(120%);
+    background: rgba(24, 26, 27, 0.7) !important;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.12);
+    transition: background 0.3s;
+}
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+.nav-img {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    border: 2px solid #fff;
+}
+
+/* Navbar Profile Image Animation */
+.navProfileImg {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+}
+.navbar.scrolled #navProfileImg {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Hero Profile Image Animation */
+#heroProfileImg {
+    opacity: 1;
+    transition: opacity 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+}
+.hide-hero-img {
+    opacity: 0 !important;
+    pointer-events: none;
+}
+
+/* Hero Section */
+#hero {
+    background: radial-gradient(ellipse at 60% 40%, #2b2e4a 0%, #181a1b 100%);
+    position: relative;
+    overflow: hidden;
+}
+.hero-img-wrapper {
+    position: relative;
+    z-index: 2;
+}
+.hero-img {
+    border: 4px solid #fff;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+    background: #23272b;
+    transition: transform 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+}
+.hero-img:hover {
+    transform: scale(1.07) rotate(-2deg);
+}
+.hero-bg-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 480px;
+    height: 480px;
+    background: radial-gradient(circle, #5eead4 0%, #312e81 80%, transparent 100%);
+    opacity: 0.18;
+    filter: blur(60px);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* About Section */
+#about {
+    background: linear-gradient(120deg, #23272b 0%, #181a1b 100%);
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+.about-img {
+    max-width: 320px;
+    border-radius: 24px;
+    border: 3px solid #5eead4;
+    box-shadow: 0 4px 24px rgba(94,234,212,0.12);
+    position: relative;
+    z-index: 2;
+}
+.about-glow {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle, #5eead4 0%, transparent 80%);
+    opacity: 0.18;
+    filter: blur(32px);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* Certificates Section */
+#certificates {
+    background: linear-gradient(120deg, #23272b 0%, #181a1b 100%);
+}
+.cert-img {
+    max-height: 340px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 2px solid #5eead4;
+    box-shadow: 0 4px 24px rgba(94,234,212,0.10);
+}
+.carousel-inner {
+    background: rgba(24,26,27,0.85);
+    border-radius: 18px;
+}
+.carousel-caption {
+    background: rgba(24,26,27,0.7);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    color: #5eead4;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+/* Skills Section */
+#skills {
+    background: linear-gradient(120deg, #181a1b 0%, #23272b 100%);
+}
+.skill-img {
+    max-width: 180px;
+    max-height: 180px;
+    border-radius: 16px;
+    border: 2px solid #5eead4;
+    background: #23272b;
+    box-shadow: 0 2px 12px rgba(94,234,212,0.10);
+    margin-bottom: 1rem;
+}
+
+/* Contact Section */
+#contact {
+    background: linear-gradient(120deg, #23272b 0%, #181a1b 100%);
+    border-radius: 32px 32px 0 0;
+    box-shadow: 0 -8px 32px rgba(0,0,0,0.12);
+}
+.form-control {
+    border: 1.5px solid #5eead4;
+    border-radius: 8px;
+    background: #181a1b;
+    color: #f8f9fa;
+}
+.form-control:focus {
+    border-color: #5eead4;
+    box-shadow: 0 0 0 0.2rem rgba(94,234,212,0.15);
+    background: #23272b;
+    color: #fff;
+}
+.btn-outline-light {
+    border-color: #5eead4;
+    color: #5eead4;
+    transition: background 0.2s, color 0.2s;
+}
+.btn-outline-light:hover, .btn-outline-light:focus {
+    background: #5eead4;
+    color: #181a1b;
+    border-color: #5eead4;
+}
+
+/* Footer */
+footer {
+    background: #181a1b;
+    color: #b0b3b8;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    border-top: 1px solid #23272b;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .hero-img {
+        width: 120px !important;
+        height: 120px !important;
+    }
+    .about-img {
+        max-width: 220px;
+    }
+    .skill-img {
+        max-width: 120px;
+        max-height: 120px;
+    }
+    .carousel-caption {
+        font-size: 0.95rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Utility Classes */
+.bg-gradient-dark {
+    background: linear-gradient(120deg, #23272b 0%, #181a1b 100%) !important;
+}
